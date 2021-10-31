@@ -1,0 +1,9 @@
+sudo nvidia-smi -i 0 -pm 1
+sudo nvidia-smi -i 1 -pm 1
+sudo nvidia-smi -i 2 -pm 1
+sudo nvidia-smi -i 0 -ac 850,997
+#sudo nvidia-smi -i 2 -ac 5705,1556
+#sudo nvidia-smi -i 1 -pl 125
+sudo nvidia-smi -i 1 -pl 280
+sudo nvidia-smi  -i 2 -ac 8001,900
+#sudo nvidia-smi -i 2 -pl 125
