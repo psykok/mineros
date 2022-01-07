@@ -1,5 +1,7 @@
 #!/bin/bash
-source .private
+SCRIPT=`realpath $0`
+SCRIPTPATH=`dirname $SCRIPT`
+source $SCRIPTPATH/.private
 
 RES_HASH=`echo '{"id":1,"jsonrpc":"2.0","method":"miner_getstatdetail"}' | netcat -N localhost 3333|jq -r '.result.devices[]|._index,.mining.hashrate'| sed 'N;s/\n/,/'`
 
